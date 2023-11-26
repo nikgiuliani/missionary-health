@@ -13,21 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +20,98 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* style the navigation header */
+.header {
+  background-color: #819dcb;
+  min-height: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.nav-links {
+  list-style: none; /* Remove default list styles */
+  display: flex; /* Make the list items flex containers */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+  margin-right: 20px; /* Add spacing between the navigation items */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Set the color for links */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #819dcb;
+}
+
+.body h1 {
+  margin-bottom: -17px;
+}
+
+.body h3 {
+  margin-bottom: 25px;
+}
+
+/* style the modal buttons */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.modal h2 {
+  margin-bottom: 15px;
+}
+
+.modal button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #32527b; /* Change to your preferred color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #819dcb; /* Change to a slightly darker shade */
+}
+
+/* style the focus button */
+.button-focus {
+  background-color: #32527b; /* Change to your preferred color */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-focus:hover {
+  background-color: #819dcb; /* Change to a slightly darker shade on hover */
 }

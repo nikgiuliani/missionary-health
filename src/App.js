@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Meditation from "./components/Meditation";
+import Stress from "./components/Stress";
+import Depression from "./components/Depression";
+import Sleep from "./components/Sleep";
+import Header from "./components/Header";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/depression" element={<Depression />} />
+        <Route path="/meditation" element={<Meditation />} />
+        <Route path="/sleep" element={<Sleep />} />
+        <Route path="/stress" element={<Stress />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
