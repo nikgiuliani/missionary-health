@@ -22,8 +22,11 @@ const Home = () => {
 
   return (
     <div className="body">
-      <h1>Welcome to Calm Companion:</h1>
+      <h1>Welcome to Calm Companion</h1>
       <h3>Your mental health guide throughout your mission</h3>
+      <img src="shepherd.png" alt="shepherd"></img>
+      <br></br>
+      <br></br>
       <button className="button-focus" onClick={openModal}>
         What do you want to focus on today?
       </button>

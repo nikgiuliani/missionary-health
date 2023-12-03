@@ -24,13 +24,14 @@
 
 /* style the navigation header */
 .header {
-  background-color: #819dcb;
+  background-color: #688d8a;
   min-height: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .nav-links {
@@ -55,7 +56,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #819dcb;
+  color: #688d8a;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .body h1 {
@@ -64,12 +66,20 @@
 
 .body h3 {
   margin-bottom: 25px;
+  color: #32506b;
 }
 
+.body p {
+  color: #32506b;
+}
+
+.body li {
+  color: #32506b;
+}
 /* style the modal buttons */
 .modal {
   position: fixed;
-  top: 50%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
@@ -82,6 +92,7 @@
 
 .modal h2 {
   margin-bottom: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .modal button {
@@ -89,7 +100,7 @@
   width: 100%;
   padding: 10px;
   margin: 5px 0;
-  background-color: #32527b; /* Change to your preferred color */
+  background-color: #688d8a; /* Change to your preferred color */
   color: white;
   border: none;
   border-radius: 5px;
@@ -98,20 +109,43 @@
 }
 
 .modal button:hover {
-  background-color: #819dcb; /* Change to a slightly darker shade */
+  background-color: #688d8a; /* Change to a slightly darker shade */
 }
 
 /* style the focus button */
 .button-focus {
-  background-color: #32527b; /* Change to your preferred color */
+  background-color: #32506b;
   color: white;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
 }
 
 .button-focus:hover {
-  background-color: #819dcb; /* Change to a slightly darker shade on hover */
+  background-color: #688d8a; /* Change to a slightly darker shade on hover */
+}
+
+.a {
+  color: #32506b;
+}
+
+.select-dropdown {
+  appearance: none; /* Remove default arrow in some browsers */
+  background-color: #32506b;
+  color: white;
+  padding: 10px;
+  border: 1px solid #688d8a;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
+}
+
+.text-area {
+  color: pink;
 }

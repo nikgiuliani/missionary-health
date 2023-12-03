@@ -7,6 +7,8 @@ import Stress from "./components/Stress";
 import Depression from "./components/Depression";
 import Sleep from "./components/Sleep";
 import Header from "./components/Header";
+import Emergency from "./components/Emergency";
+import Journal from "./components/Journal";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Route path="/meditation" element={<Meditation />} />
         <Route path="/sleep" element={<Sleep />} />
         <Route path="/stress" element={<Stress />} />
+        <Route path="/emergency" element={<Emergency />} />
+        <Route path="/journal" element={<Journal />} />
       </Routes>
     </Router>
   );

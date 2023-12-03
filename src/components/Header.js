@@ -21,6 +21,12 @@ const Header = () => {
           <li>
             <Link to="/stress">Stress/Anxiety</Link>
           </li>
+          <li>
+            <Link to="/journal">Journal</Link>
+          </li>
+          <li>
+            <Link to="/emergency">Emergency</Link>
+          </li>
         </ul>
       </nav>
     </header>
