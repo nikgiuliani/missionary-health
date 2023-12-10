@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
+  const [showMoodModal, setShowMoodModal] = useState(false);
   const [selectedFocus, setSelectedFocus] = useState("");
+  const [selectedMoodFocus, setSelectedMoodFocus] = useState("");
   const navigate = useNavigate();
 
   const openModal = () => {
@@ -20,11 +22,44 @@ const Home = () => {
     navigate(`/${focus.toLowerCase()}`);
   };
 
+  const openMoodModal = () => {
+    setShowMoodModal(true);
+  };
+
+  const closeMoodModal = () => {
+    setShowMoodModal(false);
+  };
+
+  const handleFocusSelectMood = (focus) => {
+    setSelectedMoodFocus(focus);
+    closeMoodModal();
+    navigate(`/resources/${focus.toLowerCase()}`);
+  };
+
   return (
     <div className="body">
       <h1>Welcome to Calm Companion</h1>
       <h3>Your mental health guide throughout your mission</h3>
       <img src="shepherd.png" alt="shepherd"></img>
+      <br></br>
+      <br></br>
+      <button className="button-focus" onClick={openMoodModal}>
+        How are you feeling today?
+      </button>
+      {showMoodModal && (
+        <div className="modal">
+          <h2>Choose an Option:</h2>
+          <button onClick={() => handleFocusSelectMood("happy")}>Happy</button>
+          <button onClick={() => handleFocusSelectMood("okay")}>Okay</button>
+          <button onClick={() => handleFocusSelectMood("anxious")}>
+            Anxious
+          </button>
+          <button onClick={() => handleFocusSelectMood("sad")}>Sad</button>
+          <button onClick={() => handleFocusSelectMood("depressed")}>
+            Depressed
+          </button>
+        </div>
+      )}
       <br></br>
       <br></br>
       <button className="button-focus" onClick={openModal}>

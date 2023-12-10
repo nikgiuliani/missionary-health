@@ -9,6 +9,7 @@ import Sleep from "./components/Sleep";
 import Header from "./components/Header";
 import Emergency from "./components/Emergency";
 import Journal from "./components/Journal";
+import Resources from "./components/Resources";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/stress" element={<Stress />} />
         <Route path="/emergency" element={<Emergency />} />
         <Route path="/journal" element={<Journal />} />
+        <Route path="/resources/:mood" element={<Resources />} />
       </Routes>
     </Router>
   );
