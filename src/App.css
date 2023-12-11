@@ -71,6 +71,7 @@
 
 .body p {
   color: #32506b;
+  text-align: center;
 }
 
 .body li {
@@ -79,7 +80,7 @@
 /* style the modal buttons */
 .modal {
   position: fixed;
-  top: 85%;
+  top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
@@ -144,6 +145,23 @@
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: medium;
+}
+
+.select-dropdown:hover {
+  background-color: #4a7384;
+  border-color: #a2c4c1;
+}
+
+/* Add styles for the select dropdown when focused */
+.select-dropdown:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 5px rgba(162, 196, 193, 0.7); /* Add a subtle box shadow */
+}
+
+/* Add styles for the option elements */
+.select-dropdown option {
+  background-color: #32506b;
+  color: white;
 }
 
 .text-area {

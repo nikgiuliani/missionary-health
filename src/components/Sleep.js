@@ -98,7 +98,11 @@ const SleepPage = () => {
       <br></br>
       <label>
         Select Voice:{" "}
-        <select value={selectedVoice} onChange={handleVoiceChange}>
+        <select
+          className="select-dropdown"
+          value={selectedVoice}
+          onChange={handleVoiceChange}
+        >
           {voices.map((voice) => (
             <option key={voice.name} value={voice.name}>
               {voice.name}
@@ -109,7 +113,11 @@ const SleepPage = () => {
       <br></br>
       <label>
         Select Time (minutes):{" "}
-        <select value={selectedTime} onChange={handleTimeChange}>
+        <select
+          className="select-dropdown"
+          value={selectedTime}
+          onChange={handleTimeChange}
+        >
           <option value={3}>3 minutes</option>
           <option value={5}>5 minutes</option>
           <option value={10}>10 minutes</option>

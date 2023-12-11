@@ -5,12 +5,16 @@ const DepressionResourcesPage = () => {
     <div className="body">
       <h1>Missionary Depression Resources</h1>
       <p className="p">
-        As an LDS missionary, facing depression can be a unique challenge. It's
-        important to remember that seeking help is a sign of strength, and
-        support is available to help you through difficult times.
+        Missionary work and the conditions associated with it can be
+        discouraging. Sometimes in our lives, we may even fall in a state of
+        constant sadness. Just remember: God sees every tear, and He has the
+        power to comfort you. Your family and friends are praying for you.
+        You're never alone. Feeling this way, we recommend you talk to someone
+        you trust, like your mission president or companion, or get the help you
+        need.
       </p>
       <img src="depression.png" alt="depression"></img>
-      <h1>Advice:</h1>
+      <h1>Advice</h1>
       <ul>
         <li>
           Reach out to your mission president, companion, or a trusted leader to
@@ -33,14 +37,19 @@ const DepressionResourcesPage = () => {
           back home.
         </li>
       </ul>
-      <h1>You Are Not Alone:</h1>
-      <p className="p">
-        Remember that many missionaries have faced similar challenges, and it's
-        okay to seek help. Your mental health is important, and there are
-        resources available specifically for LDS missionaries.
-      </p>
-      <h1>Resources:</h1>
+
+      <h1>Resources</h1>
       <ul>
+        <li>
+          <a
+            className="a"
+            href="https://www.churchofjesuschrist.org/study/new-era/2016/07/enduring-to-the-end?lang=eng#p6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            General Conference Talks
+          </a>
+        </li>
         <li>
           <a
             className="a"
@@ -71,17 +80,13 @@ const DepressionResourcesPage = () => {
             LDS Mental Health Resources
           </a>
         </li>
-        <li>
-          <a
-            className="a"
-            href="https://suicidepreventionlifeline.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            National Suicide Prevention Lifeline
-          </a>
-        </li>
       </ul>
+      <h1>You Are Not Alone</h1>
+      <p className="p">
+        Remember that many missionaries have faced similar challenges, and it's
+        okay to seek help. Your mental health is important, and there are
+        resources available specifically for LDS missionaries.
+      </p>
     </div>
   );
 };

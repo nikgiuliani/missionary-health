@@ -3,18 +3,30 @@ import { useParams } from "react-router-dom";
 const Resources = () => {
   const { mood } = useParams();
   return (
-    <div style={{ padding: "50px" }}>
+    <div style={{ padding: "10px" }}>
       {mood === "happy" && (
-        <div>
-          <p>Congrats on doing so good! Keep it up!</p>
-          <a href="https://www.churchofjesuschrist.org/study/new-era/2016/07/enduring-to-the-end?lang=eng#p6">
-            Here's a conference talk you can read
-          </a>
+        <div className="body">
+          <h1 className="h1">Congrats on doing so good! Keep it up!</h1>
+          <br></br>
+          <br></br>
+          <img
+            src="/happy.png"
+            alt="happy"
+            style={{ width: "450px", height: "400px" }}
+          ></img>
+          <p className="p">
+            Consider checking in on your companion to see how they are doing and
+            if you can help them. <br></br>Remember that the mental health
+            journey has its ups and downs, so keep coming back to this app as
+            you need.
+          </p>
         </div>
       )}
       {mood === "okay" && (
         <div>
-          <p>Life gets hard, but remember that the Savior is there for you.</p>
+          <p className="p">
+            Life gets hard, but remember that the Savior is there for you.
+          </p>
           <a href="https://www.churchofjesuschrist.org/study/new-era/2016/07/enduring-to-the-end?lang=eng#p6">
             Here's a conference talk you can read
           </a>
